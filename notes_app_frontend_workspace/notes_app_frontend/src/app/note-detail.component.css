@@ -1,0 +1,123 @@
+.note-detail {
+  background: var(--background);
+  border-radius: 14px;
+  box-shadow: 0 3px 23px rgba(33,44,55,0.03);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 580px;
+  min-height: 360px;
+  padding: 1.7rem 1.85rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.19s;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-bottom: 8px;
+}
+
+.edit-btn, .delete-btn, .save-btn, .cancel-btn {
+  border: none;
+  padding: 0.4em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.edit-btn {
+  background: var(--secondary);
+  color: var(--on-secondary);
+}
+.edit-btn:hover {
+  background: var(--primary);
+}
+.delete-btn {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.delete-btn:hover {
+  background: #ee0e69;
+}
+.save-btn {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+.save-btn:hover {
+  filter: brightness(1.2);
+}
+
+.cancel-btn {
+  background: #fff;
+  color: var(--secondary);
+  border: 1.2px solid var(--secondary);
+}
+.cancel-btn:hover {
+  background: var(--gray-light);
+}
+
+.input-title {
+  width: 100%;
+  font-size: 1.38rem;
+  padding: 0.65em;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1.5px solid var(--gray);
+  outline: none;
+  font-weight: 600;
+  background: var(--surface);
+  color: var(--secondary);
+}
+
+.input-content {
+  width: 100%;
+  min-height: 155px;
+  font-size: 1.13rem;
+  border-radius: 8px;
+  padding: 1em 0.7em;
+  border: 1.5px solid var(--gray);
+  background: var(--surface);
+  margin-bottom: 1.2em;
+  color: var(--secondary);
+  font-family: inherit;
+}
+
+.actions {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.note-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.17em;
+  color: var(--primary);
+}
+
+.note-dates {
+  color: var(--gray-dark);
+  font-size: 0.92rem;
+  margin-bottom: 0.8em;
+}
+
+.note-content {
+  font-family: 'Inter', sans-serif;
+  color: var(--secondary);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  padding-left: 2px;
+  word-break: break-word;
+}
+
+@media (max-width: 700px) {
+  .note-detail {
+    padding: 0.9rem 0.5rem 1.3rem 0.5rem;
+    border-radius: 0;
+    min-height: 270px;
+  }
+  .note-title { font-size: 1.25rem; }
+}

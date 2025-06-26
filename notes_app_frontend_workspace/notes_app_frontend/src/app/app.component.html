@@ -1,0 +1,19 @@
+<div class="app-container">
+  <app-sidebar
+    (selectNote)="onSelect($event)"
+    (createNote)="onCreate()"
+    [selectedNoteId]="selectedNoteId"
+    [notes]="notes"
+  ></app-sidebar>
+  <main class="main-content">
+    <app-note-detail
+      *ngIf="selectedNote"
+      [note]="selectedNote"
+      (save)="onSave($event)"
+      (delete)="onDelete($event)"
+      (cancel)="onCancel()"
+    ></app-note-detail>
+    <app-empty-state *ngIf="!selectedNote && notes.length === 0"></app-empty-state>
+    <app-welcome *ngIf="!selectedNote && notes.length > 0"></app-welcome>
+  </main>
+</div>

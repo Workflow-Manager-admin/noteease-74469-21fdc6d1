@@ -1,0 +1,47 @@
+/* Theme palette variables */
+:root {
+  --primary: #1976d2;
+  --secondary: #455a64;
+  --accent: #ff4081;
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --on-primary: #fff;
+  --on-secondary: #fff;
+  --on-accent: #fff;
+  --gray-light: #ececec;
+  --gray: #cfd8dc;
+  --gray-dark: #607d8b;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--secondary);
+}
+
+.main-content {
+  flex: 1 1 auto;
+  background: var(--surface);
+  min-width: 0;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  box-shadow: -2px 0 3px 0 rgba(33, 33, 33, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .main-content {
+    width: 100vw;
+    min-height: 55vh;
+    padding: 1rem 0.5rem;
+    box-shadow: none;
+  }
+}
