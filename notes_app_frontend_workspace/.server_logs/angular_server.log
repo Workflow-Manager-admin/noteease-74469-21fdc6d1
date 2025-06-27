@@ -22,7 +22,7 @@ chunk-DDEDMQS2.mjs   | -                |  32.06 kB |
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [2.229 seconds]
+Application bundle generation complete. [2.333 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
